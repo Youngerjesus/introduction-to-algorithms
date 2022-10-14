@@ -24,11 +24,6 @@ class FindingMaxCrossingSubArray {
             }
         }
 
-        sum = 0
-        for (i in maxLeft..maxRight) {
-            sum += list[i]
-        }
-
-        return sum
+        return leftSum + rightSum
     }
 }
