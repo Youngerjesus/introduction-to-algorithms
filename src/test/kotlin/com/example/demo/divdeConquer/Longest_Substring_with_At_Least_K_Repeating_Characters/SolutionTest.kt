@@ -30,6 +30,18 @@ internal class SolutionTest {
     }
 
     @Test
+    fun `예제_테스트_1`() {
+        //given
+        val solution = Solution()
+        val s = "aaabb"
+        val k = 3
+        //when
+        val actual = solution.longestSubstring(s, k)
+        //then
+        assertEquals(3, actual)
+    }
+
+    @Test
     fun `예제_테스트_2`() {
         //given
         val solution = Solution()
@@ -41,17 +53,6 @@ internal class SolutionTest {
         assertEquals(5, actual)
     }
 
-    @Test
-    fun `예제_테스트_1`() {
-        //given
-        val solution = Solution()
-        val s = "aaabb"
-        val k = 3
-        //when
-        val actual = solution.longestSubstring(s, k)
-        //then
-        assertEquals(3, actual)
-    }
 
     @Test
     fun `예제_테스트_3`() {
